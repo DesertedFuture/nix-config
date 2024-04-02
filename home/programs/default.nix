@@ -43,4 +43,8 @@
     enable = true;
     extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
   };
+  programs.waybar = {
+    enable = true;
+    settings = builtins.readFile ../linux/gui/waybar/waybar-config.jsonc;
+  };
 }
