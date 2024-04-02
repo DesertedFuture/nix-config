@@ -45,7 +45,7 @@
     enable = true;
     extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
   };
-  programs.steam = {
+  steam = {
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
