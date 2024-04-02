@@ -34,10 +34,20 @@
     vivaldi
     neovim
     tree
+    discord
+    vesktop
+    steam
+    steam-original
+    steam-run
   ];
 
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
+  };
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
   };
 }
