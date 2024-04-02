@@ -15,6 +15,9 @@
     wget
     git
     vim
+    applet
+    grim
+
   ];
 
   environment.variables.EDITOR = "nvim";

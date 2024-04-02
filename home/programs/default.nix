@@ -37,17 +37,10 @@
     discord
     vesktop
     steam
-    steam-original
-    steam-run
   ];
 
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
-  };
-  steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
   };
 }

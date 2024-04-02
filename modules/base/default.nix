@@ -7,5 +7,6 @@
     ./nix.nix
     ./packages.nix
     ./user-group.nix
+    ./nvidia.nix
   ];
 }

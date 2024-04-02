@@ -5,11 +5,11 @@
     #autorun = true;
 
     displayManager = {
-      lightdm.enable = true;
-      #sddm.enable = true;
+      #lightdm.enable = true;
+      sddm.enable = true;
       #defaultSession = "gnome";
-      #autoLogin.enable = true;
-      #autoLogin.user = "scott";
+      autoLogin.enable = true;
+      autoLogin.user = "scott";
     };
     desktopManager = {
       #gnome.enable = true;
