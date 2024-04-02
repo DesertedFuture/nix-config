@@ -1,7 +1,8 @@
 {mylib, ...}: {
   #imports = mylib.scanPaths ./.;
   imports = [
-    ./hyperland.nix
+    ./hyperland/hyperland.nix
     ./display.nix
+    ./waybar/waybar.nix
   ];
 }

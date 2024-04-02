@@ -15,7 +15,7 @@
     wget
     git
     vim
-    applet
+    networkmanagerapplet
     grim
 
   ];
