@@ -8,7 +8,7 @@
     # Latest stable branch of nixpkgs, used for version rollback
     # The current latest version is 23.11
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.11";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland";
