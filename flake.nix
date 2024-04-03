@@ -31,7 +31,7 @@
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
 	home-manager.extraSpecialArgs = {inherit args;};
-        home-manager.users.scott = import ./home;
+        home-manager.users.scott = import ./home/home.nix;
       }
       ];
     };
