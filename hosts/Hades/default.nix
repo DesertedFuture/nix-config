@@ -2,7 +2,7 @@
 {
   imports = [
     ../../modules/base
-    ../../home/linux/gui
+    ../../home/home.nix 
     ./hardware-configuration.nix
   ];
 
