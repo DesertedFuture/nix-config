@@ -1,7 +1,6 @@
 {
   description = "new attemp";
 
-
   inputs = {
     # NixOS official package source, using the nixos-23.11 branch here
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -14,10 +13,16 @@
     hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: {
-    # Please replace my-nixos with your hostname
+  outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: let 
+  inherit (inputs.nixpkgs) lib;
+  mylib = import ./lib {inherit lib;};
+  myvars = import ./vars {inherit lib;};
+  args = { inherit inputs lib mylib myvars;};
+  in
+  {
     nixosConfigurations.Hades = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+      specialArgs = args;
       modules = [
       ./hosts/Hades
 
@@ -25,6 +30,7 @@
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
+	home-manager.extraSpecialArgs = {inherit args;};
         home-manager.users.scott = import ./home;
       }
       ];

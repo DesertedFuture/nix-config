@@ -2,7 +2,8 @@
 {
   imports = [
     ./programs
-    ./linux/gui/waybar/waybar.nix
+    ./linux/gui/waybar
+    ./linux/gui/hyprland
   ];
   home = {
     username = "scott";
