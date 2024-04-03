@@ -9,9 +9,15 @@
 		],
 		"modules-left" : [
 			"clock"
+		],
+		"modules-right": [
+			"pulseaudio"
 		]
 	},
 	"clock" : {
 		"format-alt": "{:%Y-%m-%d}"
-	} 
+	},
+	"pulseaudio": {
+		"format": "{volume}% {icon} {format_source}"
+	}
 }
