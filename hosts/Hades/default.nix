@@ -1,18 +1,10 @@
 { config, pkgs, myvars, ... }:
-
 {
-  imports =
-    [
-      #configuratons for basic nix stuff
-      ../../modules/base
-
-      # ../../modules/nix/desktop.nix
-      ../../home/linux/gui
-
-
-      # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ../../modules/base
+    ../../home/linux/gui
+    ./hardware-configuration.nix
+  ];
 
   networking.hostName = "Hades"; # Define your hostname.
   # Enable networking

@@ -37,14 +37,11 @@
     discord
     vesktop
     steam
+    tmux
   ];
 
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
-  };
-  waybar = {
-    enable = true;
-    settings = builtins.readFile ../linux/gui/waybar/waybar-config.jsonc;
   };
 }

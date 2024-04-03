@@ -3,6 +3,5 @@
   imports = [
     ./hyperland/hyperland.nix
     ./display.nix
-    ./waybar/waybar.nix
   ];
 }
