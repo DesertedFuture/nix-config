@@ -6,8 +6,7 @@
     "output" : [
 	    "DP-1",
 	    "DP-2"
-	]
-  },
+  ],
   "modules-left" : [
 	  "clock"
   ],
@@ -23,11 +22,8 @@
     "cpu",
     "memory",
     "temperature",
-    "backlight",
     "keyboard-state",
     "sway/language",
-    "battery",
-    "battery#bat2",
     "tray"
   ],
   "keyboard-state": {
@@ -108,41 +104,6 @@
       ""
     ]
   },
-  "backlight": {
-    "format": "{percent}% {icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
-  "battery": {
-    "states": {
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
-  "battery#bat2": {
-    "bat": "BAT2"
-  },
   "power-profiles-daemon": {
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -195,4 +156,5 @@
     "escape": true,
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
   }
+ }
 }
