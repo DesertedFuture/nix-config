@@ -1,6 +1,6 @@
 {config, pkgs,lib,...}:{
   programs.waybar = {
     enable = true;
-    settings = lib.importJSON ./waybar-config.json;
+    source ./waybar-config.json;
   };
 }
