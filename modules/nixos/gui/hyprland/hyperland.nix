@@ -45,5 +45,8 @@
   ];
   qt.enable = true;
   qt.platformTheme = "gtk2";
-  qt.style = "gtk2";
+  wayland.windowManager.hyprland = {
+    enable = true;
+    extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
+  };
 }

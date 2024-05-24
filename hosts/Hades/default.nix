@@ -1,8 +1,10 @@
-{ config, pkgs, myvars, ... }:
+{ inputs, config, pkgs, myvars, specialArgs,  ... }:
 {
   imports = [
     ../../modules/base
-    ../../home/home.nix 
+    ../../modules/nixos
+    ../../modules/nixos/gui/hyprland
+
     ./hardware-configuration.nix
   ];
 
@@ -24,8 +26,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
-
-  programs.steam = {
-    enable = true;
-  };
 }

@@ -2,7 +2,7 @@
 {
   services.xserver = {
     enable = true;
-    #autorun = true;
+    autorun = true;
 
     displayManager = {
       #lightdm.enable = true;

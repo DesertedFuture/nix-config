@@ -1,9 +1,8 @@
-{ config, pkgs, inputs, lib, ... }:
-{
+{ config, pkgs, inputs, lib, ... }: {
   imports = [
     ./programs
-    ./linux/gui/waybar
-    ./linux/gui/hyprland
+    ./linux/gui/waybar/default.nix
+    ./linux/gui/hyprland/default.nix
   ];
   home = {
     username = "scott";

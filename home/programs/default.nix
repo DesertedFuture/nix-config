@@ -36,8 +36,4 @@
     tmux
   ];
 
-  wayland.windowManager.hyprland = {
-    enable = true;
-    extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
-  };
 }
