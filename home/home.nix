@@ -1,8 +1,8 @@
 { config, pkgs,... }: {
   imports = [
     ./programs
-    #./linux/gui/waybar
-    #./linux/gui/hyprland
+    ./nixos/gui/waybar
+    ./nixos/gui/hyprland
   ];
   home = {
     username = "scott";

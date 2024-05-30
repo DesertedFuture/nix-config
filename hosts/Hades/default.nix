@@ -2,7 +2,6 @@
 {
   imports = [
     ../../modules/base
-    ../../modules/nixos/gui
     ./hardware-configuration.nix
   ];
 
