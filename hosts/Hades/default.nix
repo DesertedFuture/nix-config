@@ -1,10 +1,8 @@
-{ inputs, config, pkgs, myvars, specialArgs,  ... }:
+{ inputs, lib, myvars, mylib, system, config, ... }:
 {
   imports = [
     ../../modules/base
-    ../../modules/nixos
-    ../../modules/nixos/gui/hyprland
-
+    ../../modules/nixos/gui
     ./hardware-configuration.nix
   ];
 

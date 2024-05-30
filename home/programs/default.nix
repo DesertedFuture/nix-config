@@ -24,7 +24,7 @@
 
 
     # db related
-    dbeaver
+    dbeaver-bin
     mycli
     pgcli
     vivaldi

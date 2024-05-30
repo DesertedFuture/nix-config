@@ -1,7 +1,6 @@
 {config, pkgs,lib, ...}:{
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
   };
 
   environment.sessionVariables = {
@@ -45,8 +44,4 @@
   ];
   qt.enable = true;
   qt.platformTheme = "gtk2";
-  wayland.windowManager.hyprland = {
-    enable = true;
-    extraConfig = builtins.readFile ../linux/gui/hyperland/hyprland.conf;
-  };
 }

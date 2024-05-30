@@ -1,4 +1,4 @@
-{lib}: {
+{lib, ...}: {
   username = "Scott";
   userfullname = "Scott S";
   useremail = "sssssss";

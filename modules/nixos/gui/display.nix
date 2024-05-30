@@ -1,20 +1,15 @@
-{pkgs, ...}:
+{config,pkgs, ...}:
 {
-  services.xserver = {
-    enable = true;
-    autorun = true;
-
+  services = {
     displayManager = {
-      #lightdm.enable = true;
-      sddm.enable = true;
-      #defaultSession = "gnome";
-      autoLogin.enable = true;
-      autoLogin.user = "scott";
+      enable = true;
+        sddm = {
+        wayland.enable = true;
+      };
+      autoLogin = {
+        enable = true;
+	user = "scott";
+      };
     };
-    desktopManager = {
-      #gnome.enable = true;
-    };
-
-    videoDrivers = ["nvidia"];
   };
 }
