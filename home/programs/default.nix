@@ -17,7 +17,7 @@
     graphviz
 
     # productivity
-    #obsidian
+    obsidian
 
     # IDE
     insomnia

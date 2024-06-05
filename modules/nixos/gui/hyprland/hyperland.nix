@@ -4,8 +4,7 @@
   };
 
   environment.sessionVariables = {
-    WLR_NO_HARDWARE_CURSORS = "1";
-    NIXOS_OZONE = "1";
+    NIXOS_OZONE_WL = "1";
   };
 
   hardware = {
@@ -27,8 +26,6 @@
     meson
     wayland-utils
     wayland-protocols
-    pipewire
-    wireplumber
   ];
   xdg.portal = {
     wlr.enable = true;
