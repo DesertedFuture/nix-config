@@ -3,6 +3,7 @@
     ./programs
     ./nixos/gui/waybar
     ./nixos/gui/hyprland
+    ./nixos/core
   ];
   home = {
     username = "scott";
@@ -11,5 +12,4 @@
   };
 
   programs.home-manager.enable = true;
-
 }
