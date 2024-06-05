@@ -28,7 +28,6 @@
     mycli
     pgcli
     vivaldi
-    neovim
     tree
     discord
     vesktop

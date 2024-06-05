@@ -4,14 +4,11 @@
     strace
     ltrace
     tcpdump
-    
-
     sysstat
     sysbench
-
     neofetch
-    neovim
     vivaldi
+    neovim
     wget
     git
     vim
