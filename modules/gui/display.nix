@@ -7,10 +7,10 @@
         sddm = {
         wayland.enable = true;
       };
-      autoLogin = {
-        enable = true;
-	user = "scott";
-      };
+      #autoLogin = {
+        #enable = true;
+	#user = "scott";
+      #};
     };
   };
 }

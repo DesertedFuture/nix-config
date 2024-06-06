@@ -6,14 +6,14 @@
     vimdiffAlias = true;
     plugins = with pkgs.vimPlugins; [
       nvim-lspconfig
-      telescope-nvim;
+      telescope-nvim
 
       (nvim-treesitter.withPlugins (p: [
         p.tree-sitter-nix
 	p.tree-sitter-vim
 	p.tree-sitter-lua
 	p.tree-sitter-bash
-      ]));
+      ]))
     ];
   };
 }

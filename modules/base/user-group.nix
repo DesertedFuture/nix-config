@@ -8,4 +8,5 @@
       "wheel"
     ];
   };
+  services.getty.autologinUser = "scott";
 }
