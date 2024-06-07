@@ -16,7 +16,15 @@
       ]))
     ];
   extraLuaConfig = ''
+    ${builtins.readFile ./plugin/set.lua}
+    ${builtins.readFile ./plugin/remap.lua}
     ${builtins.readFile ./plugin/lsp.lua}
+    ${builtins.readFile ./plugin/colors.lua}
+    ${builtins.readFile ./plugin/fugative.lua}
+    ${builtins.readFile ./plugin/treesitter.lua}
+    ${builtins.readFile ./plugin/harpoon.lua}
+    ${builtins.readFile ./plugin/telescope.lua}
+    ${builtins.readFile ./plugin/undotree.lua}
   '';
   };
 }
