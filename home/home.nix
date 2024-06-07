@@ -3,7 +3,7 @@
     ./programs
     ./nixos/gui/waybar
     ./nixos/gui/hyprland
-    ./nixos/core/nvim
+    ./nixos/core
   ];
   home = {
     username = "scott";

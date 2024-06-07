@@ -15,5 +15,8 @@
 	p.tree-sitter-bash
       ]))
     ];
+  extraLuaConfig = ''
+    ${builtins.readFile ./plugin/lsp.lua}
+  '';
   };
 }
