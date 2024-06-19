@@ -1,6 +1,5 @@
 {...}:{
-    programs.waybar = {
-        enable = true;
+    programs.waybar = { 
         style = 
         ''
 * {
@@ -50,5 +49,6 @@ tooltip label {
     background-color: #64727D;
 }
         '';
+        };
     };
 }
