@@ -1,0 +1,3 @@
+{...}:{
+    progrmas.ssh.startAgent = true;
+}
