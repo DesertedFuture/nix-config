@@ -49,6 +49,5 @@ tooltip label {
     background-color: #64727D;
 }
         '';
-        };
     };
 }
