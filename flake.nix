@@ -21,12 +21,12 @@
   inherit (self) outputs;
   system = "x86_64-linux";
   # mylib = import ./lib {inherit lib;};
-  # myvars = import ./vars {inherit lib;};
+  myvars = import ./vars;
   # args = { inherit inputs lib mylib myvars; };
   in
   {
     nixosConfigurations.Hades = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs outputs system; };
+      specialArgs = {inherit inputs outputs system myvars; };
       modules = [
         ./hosts/Hades
         home-manager.nixosModules.home-manager {

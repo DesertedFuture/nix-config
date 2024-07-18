@@ -1,8 +1,8 @@
 { config, pkgs,... }: {
   imports = [
     ./programs
-    ./nixos/gui/waybar
-    ./nixos/gui/hyprland
+    ./waybar
+    ./hyprland
     ./nixos/core
   ];
   home = {
