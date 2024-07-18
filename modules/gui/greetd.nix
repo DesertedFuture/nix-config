@@ -1,25 +1,10 @@
-{pkgs, ... }: {
-let
-    tuigreet = "{pkgs.greetd.tuigreet}/bin/tuigreet";
-in
-{
-    services.greetd = {
-        enable = true;
-        settings = {
-            default_seesion = {
-                command = "${tuigreet} --time --remember --cmd --Hyprland";
-                user = "greeter";
-            };
-        };
-    };
+{pkgs, ...} : 
 
-    systemd.services.greetd.serviceConfig = {
-        Type = "idle";
-        StandardInput = "tty";
-        StandardOutput = "tty";
-        StandardError = "journal";
-        TTYReset = true;
-        TTYVHangup = true;
-        TTYVDisallocate = true;
+{
+    services.xserver = {
+        enable = true;
+        displayManager = {
+            gdm.enable = true;
+        };
     };
 }

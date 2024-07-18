@@ -14,7 +14,8 @@
     vim
     networkmanagerapplet
     grim
-
+    greetd.tuigreet
+    greetd.greetd
   ];
 
   environment.variables.EDITOR = "nvim";

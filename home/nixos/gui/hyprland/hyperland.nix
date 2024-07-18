@@ -1,6 +1,7 @@
 {pkgs,lib, config, ...}:
 let
   startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
+  sleep 1
   ${pkgs.waybar}/bin/waybar &
   ${pkgs.swww}/bin/swww init &
   sleep 1
