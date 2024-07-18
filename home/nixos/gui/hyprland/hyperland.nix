@@ -2,11 +2,6 @@
 let
   startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
   sleep 1
-  ${pkgs.waybar}/bin/waybar &
-  ${pkgs.swww}/bin/swww init &
-  sleep 1
-  swww img DP-1 ~/home/scott/Downloads/images/circle-wave.gif &
-  swww img DP-2 ~/home/scott/Downloads/images/peaceful-blue-hue.gif &
   '';
 in
 {
