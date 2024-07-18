@@ -16,6 +16,10 @@
     grim
     greetd.tuigreet
     greetd.greetd
+    zig
+    gcc
+    python3
+    zulu
   ];
 
   environment.variables.EDITOR = "nvim";

@@ -1,9 +1,4 @@
 {pkgs,lib, config, ...}:
-let
-  startupScript = pkgs.pkgs.writeShellScriptBin "start" ''
-  sleep 1
-  '';
-in
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -13,7 +8,7 @@ in
     systemd.enable = true;
 
     settings = {
-      #exec-once = startupScript;
+      exec-once = "bash waybar";
       "monitor" = ["DP-1,preferred,auto,auto" "DP-2, preferred,auto,auto" "Unknown-1,disable"];
       "$terminal" = "kitty";
       "$fileManager" = "dolphin";
